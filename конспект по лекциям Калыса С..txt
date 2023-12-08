@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple starter templete</title>
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Oswald:wght@400;700&family=Roboto&display=swap" rel="stylesheet"> 
+<link rel="stylesheet" href="./style/style.css"> <!-- комментировать весь   ctrl+?(вопрос вправой части клавиатуры   можно прописать котротко .bg>.header-blok>nav>ul.nav-list>.nav-item*5>a.nav-item_{item1}- после такого ввода Emmet показывает всю структуру и нажимаем TAB, после чего в ссылках a.nav-item_{item1} ни куда не ведут  .-это div, в нутри него находится bg> .header-blokтег> внутри .header-blokтег будет  nav> в нутри nav будет находится тег маркировочный список ul.nav-list> внутри ul.nav-list> будет тег li.nav-item> внутри тега li.nav-item>*5 (*5-это nav)  д.б. какие-то определенные ссылки на меню с возможностью перехода, и которые будут обозначаться   тег a.navitem_lik т.к. сылках тега <a href=" должны поставить сюда заглушки - #- переходить между" class="nav-item_link">item</a></li>   -->
+</head>
+<body>
+    <div class="bg"> <!--на уровне body выставляем bagraund, подложку темную-->
+        <div class="wrapper"> <!--необходим для создания отступа 90, на любом сайте есть определенные отступы, они обычно пропорциональны, дизайнер сам отклалывает эти отступы, мы эти отступы учитываем и прописываем в стили, и файле СSS создаем отдельный класс .wrapper
+        <header class="main-header"> HEADER ЯВЛЯЕТСЯ РОДИТЕЛЕМ для дочернич элементов., дочерний элемент, мы сказали что HEADER РОДИТЕЛЕ ширирну 1440 рх, дочерние э-ты будут работать в рамках этой ширины родителя-->
+    <!--на дизайне есть картинка (подложка), нам необходимо эту картин-->
+            <div class="main-block">  
+            <header class="main-header">       
+            <div class="header-blok" style="background-color: black;"> <!--это свойство дисплей флекс, после чего указать, что блоки будут расположены вертикально и после этого -->
+                <div class="header-logo">
+                    <a href="#" class="logo-link">your<span>logo</span></a>
+                </div> <!--'это сложная комбинация .header-logo>a.logo-link{} + tab (нужно сделать так чтобы была фокусировка(при переходе меж окнами уходит фокусировка))'-->
+                <nav>
+                    <ul class="nav-list">
+                        <li class="nav-item"><a href="# " class="nav-item_link">Home</a></li>
+                        <li class="nav-item"><a href="#" class="nav-item_link">item1</a></li>
+                        <li class="nav-item"><a href="#" class="nav-item_link">item2</a></li>
+                        <li class="nav-item"><a href="#" class="nav-item_link">item3</a></li>
+                        <li class="nav-item"><a href="#" class="nav-item_link">item4</a></li>
+                        <li class="nav-item"><a href="#" class="nav-item_link">item5</a></li>
+                    </ul>
+                </nav> <!--условно в нутри header два элемента это div class и nav-->
+                <div class="header-support">
+                    <a href="#" class="support">support</a> 
+                    <a href="#" class="contact">contact</a> <!--тег <а> можно было сделать кнопкой-->
+                    <a href="#" class="©2020 ACME LLC.">©2020 ACME LLC.</a>
+                </div> <!--.header-support>a.support{support}+a.contact сложный оборот-->
+            </div>
+            </header>
+            <main>
+                <div class="main-content">
+                    <h1 class="main-content_titel">SIMPLE STARTER TEMPLATE</h1>
+                    <p class="main-content_descript">A clean simple desktop design with space to add & alter items instead of removing them. An easy to use starting point for beginners to make mockups or designs that look nice, quickly.</p>
+                    <button class="btn">LERN MORE</button>
+                    <div class="block-img">
+                        <img src="./img/70435438-11AA-4870-9F06-65BFC991AA4A 1.png" alt="img" class="image">
+                        <img src="./img/70435438-11AA-4870-9F06-65BFC991AA4A 2.png" alt="img" class="image">
+                        <img src="./img/70435438-11AA-4870-9F06-65BFC991AA4A 3.png" alt="img" class="image">
+                        <img src="/img/70435438-11AA-4870-9F06-65BFC991AA4A 4.png" alt="img" class="image">
+                    </div>
+                </div>  
+            </main>
+            <div class="cocial"><a href="" class="twit"></a><a href="" class="vc"></a></div>
+            <footer></footer>
+            </div>
+          
+        </div>
+    </div>  
+    
+   
+  
+
+       
+   <script src="script.js"></script>  <!-- подключаем script.js -->
+</body>
+</html>
